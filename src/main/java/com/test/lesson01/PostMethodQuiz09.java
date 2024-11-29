@@ -16,6 +16,8 @@ public class PostMethodQuiz09 extends HttpServlet{
 			HttpServletResponse response) throws IOException {
 		
 		//테스트용 주석 추가
+		//임시 내용 추가
+		
 		response.setContentType("text/html");
 		
 		String name = request.getParameter("name");
