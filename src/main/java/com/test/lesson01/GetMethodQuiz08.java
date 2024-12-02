@@ -35,8 +35,11 @@ public class GetMethodQuiz08 extends HttpServlet{
 		for (int i = 0; i < 5; i++) {
 		    String sentence = list.get(i);
 		    if (sentence.contains(search)) {
+		        // 정규 표현식을 사용하여 search 부분을 <b>로 감싸기
 		        String Sentence = sentence.replaceAll(search, "<b>" + search + "</b>");
 		        out.print(Sentence + "<br>");
+		    	
+		    	
 		    }
 		} out.print("</body></html>");
 		

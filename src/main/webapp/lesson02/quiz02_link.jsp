@@ -1,11 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>사용자 정보 확인</title>
+<title>Quiz02</title>
 </head>
 <body>
-	<link rel="stylesheet"
+<link rel="stylesheet"
 		href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
 		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
 		crossorigin="anonymous">
@@ -17,21 +19,11 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
 		crossorigin="anonymous"></script>
-	<div class="container">
-		<h1 class="mt-3">
-			로그인
-		</h1>
+		
+	<h1 class="mt-3 mb-4">날짜, 시간 링크</h1>
+	
+	<a href="/lesson02/quiz02_result.jsp?type=time" class="btn btn-info" >현재 시간 확인</a>
+	<a href="/lesson02/quiz02_result.jsp?type=date" class="btn btn-success" >현재 날짜 확인</a>
 
-		<form method="post" action="/lesson01/quiz10">
-			<div class="form-group">
-				<input type="text" class="form-control col-4 mt-2" name="id" placeholder="아이디를 입력하세요"> 
-				<input type="password" class="form-control col-4 mt-1" name="password" placeholder="비밀번호를 입력하세요"> 
-				<button type="submit" class="btn btn-success mt-2" name="login">로그인</button>
-			
-			</div>
-		</form>
-	</div>
-	
-	
 </body>
 </html>
