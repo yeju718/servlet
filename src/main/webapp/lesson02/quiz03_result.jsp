@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>체격 조건</title>
+<title>BMI 계산</title>
 </head>
 <body>
 
