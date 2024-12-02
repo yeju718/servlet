@@ -19,17 +19,22 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
 		crossorigin="anonymous"></script>
-		
-	<div class="container flex">
-	<h1 class="mt-2">체격 조건 입력</h1> <br>
-		<input type="text" class="form-control col-4" placeholder="키를 입력하세요">
-		<input type="text" class="form-control col-4" placeholder="몸무게를 입력하세요">
-		<button type="btn" class="col-2 form-control">계산</button>
-	
-	
+
+	<div class="container">
+		<h1 class="mt-2">체격 조건 입력</h1>
+		<br>
+		<form action="/lesson02/quiz03_result.jsp">
+			<input type="text" name="height" class="form-control col-3"
+				placeholder="키를 입력하세요">
+			<p class="mt-2 mr-1">cm</p>
+			<input type="text" name="weight" class="form-control col-3"
+				placeholder="몸무게를 입력하세요">
+			<p class="mt-2 mr-1">kg</p>
+			<button type="btn" class="form-control btn-info col-1">계산</button>
+		</form>
 	</div>
-	
-	
+
+
 </body>
 </html>
 
