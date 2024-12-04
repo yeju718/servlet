@@ -22,11 +22,9 @@
 		crossorigin="anonymous"></script>
 		
 	<%
-	String height = request.getParameter("height");
-	String weight = request.getParameter("weight");
 	
-	double Height = Integer.parseInt(height);
-	double Weight = Integer.parseInt(weight);
+	double Height = Integer.parseInt( request.getParameter("height"));
+	double Weight = Integer.parseInt(request.getParameter("weight"));
 	double bmi = Weight / ((Height / 100.0) * (Height / 100.0));
 	
 	String result = null;
@@ -41,7 +39,7 @@
 	}
 	
 	%>
-	<div class="container  mt-2">
+	<div class="container mt-2">
 	 <h1 class="ml-3">BMI 측정 결과</h1>
 	 <div class="container display-3">
 	 당신은 <span class='text-info'> <%=result %> </span> 입니다.
