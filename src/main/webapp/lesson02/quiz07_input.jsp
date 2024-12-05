@@ -1,13 +1,10 @@
-<%@page import="java.util.Iterator"%>
-<%@page import="java.util.Arrays"%>
-<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>장보기 목록</title>
+<title>배탈의 민족</title>
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
 	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
@@ -22,37 +19,20 @@
 	crossorigin="anonymous"></script>
 </head>
 <body>
-
 	<div class="container">
-		<h1 class="text-center mt-4">장보기 목록</h1>
-		<table class="table text-center">
-			<thead>
-				<tr>
-					<th>번호</th>
-					<th>품목</th>
-				</tr>
-			</thead>
-			<tbody>
-		<%
-				List<String> goodsList = Arrays.asList(new String[]{ 
-					"저지방 우유", "요플레 4개", "딸기 1팩", "삼겹살 300g", "생수 6개", "주방 세제"
-				});
-			
-				for (int i = 0; i < goodsList.size(); i++) {
-			%>
-			<tr>
-					<td><%= i + 1 %></td>
-					<td><%= goodsList.get(i) %></td>
-				</tr>
-			<%
-				}
-			%>
-			</tbody>
-		</table>
+		<form method="post" action="/lesson02/quiz07_result.jsp">
+			<h1>메뉴 검색</h1>
+			<div class="d-flex">
+				<input type="text" name="search" class="form-control col-4">
+				<label class="ml-2"> <input type="checkbox" class="mr-2"
+					value="check" name="exception">4점 이하 제외
+				</label>
+			</div>
+			<button type="submit" class="form-control mt-2 col-1 btn btn-success"
+				value="검색">검색</button>
+
+		</form>
 	</div>
-			
+
 </body>
 </html>
-
-
-
